@@ -1,0 +1,45 @@
+{
+    "name": "ephort/laravel-logvaerk",
+    "description": "Ship Laravel application logs to Logværk.",
+    "keywords": ["laravel", "logging", "monolog", "logvaerk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ephort",
+            "homepage": "https://ephort.dk"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/log": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+        "monolog/monolog": "^2.0|^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^9.5|^10.0|^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ephort\\Logvaerk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ephort\\Logvaerk\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ephort\\Logvaerk\\LogvaerkServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
